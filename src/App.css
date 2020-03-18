@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
+* {
+  margin: 0px;
+  padding: 0px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  font-size: 62.5%;
+  font-size: 10px;
+  overflow-x: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  max-width: 1200px !important;
+  width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 25px 0px;
+  height: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.nav__container p {
+  display: inline-block;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logo {
+  width: 133px;
+  height: 30.97px;
 }
+
+.nav__List {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  list-style: none;
+  margin-bottom: 0px;
+  max-width: 502.99px;
+  width: 100%;
+}
+
+.nav__List a {
+  margin-right: 49px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.57rem;
+  color: #303134;
+  line-height: 3.7rem;
+  font-weight: 600;
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
+  position: relative;
+}
+
+.nav__List a::after {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  left: 0px;
+  bottom: 5px;
+  background-color: red;
+}
+
+.nav__List a:hover {
+  color: inherit;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.nav__List a:last-of-type {
+  margin-right: 0px;
+}
+/*# sourceMappingURL=App.css.map */
