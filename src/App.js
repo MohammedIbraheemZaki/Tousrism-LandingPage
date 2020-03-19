@@ -5,7 +5,8 @@ import Nav from './components/header/Nav';
 import MainSliderBg from './Images/mainSliderBg.jpg';
 import Wzeg from './Images/wzeg.png';
 import TourBg from './Images/tourBg.jpg';
-import videoImg from './Images/videoBlaceholder.jpg';
+// import videoImg from './Images/videoBlaceholder.jpg';
+import Video from './components/video_player/videoPlayer';
 import About from './About';
 import Service from './Service';
 import Services from './components/serviceszComponent/services'
@@ -57,9 +58,9 @@ const Home = () => (
                 </div>
               </div>
             </div>
-            <div className="col-lg-7 ">
+            <div className="col-lg-7">
               <div className="video">
-                <img src={videoImg} alt=""/>
+                <Video/>
               </div>
             </div>
           </div>

@@ -407,11 +407,16 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.video img {
+  border-bottom: 4px solid #4B54FA;
+  width: 663px;
+  height: 314px;
+  overflow: hidden;
   -webkit-transform: translateY(4px);
           transform: translateY(4px);
-  border-bottom: 4px solid #4B54FA;
+}
+
+.video .video-react {
+  padding: 0px !important;
+  width: 100%;
 }
 /*# sourceMappingURL=App.css.map */

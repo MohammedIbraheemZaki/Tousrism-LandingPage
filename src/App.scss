@@ -2,6 +2,7 @@
 @import './components/main_slider/mainSlider.scss';
 @import './components/serviceszComponent/services.scss';
 @import './components/cards/servicesCard/serviceCard.scss';
+// @import '~video-react/styles/scss/video-react';
 *{
   margin: 0px;
   padding: 0px;
@@ -89,8 +90,13 @@ html{
 .video{
   display: flex;
   justify-content: center;
-  img{
-    transform: translateY(4px);
-    border-bottom: 4px solid #4B54FA;
+  border-bottom: 4px solid #4B54FA;
+  width: 663px;
+  height: 314px;
+  overflow: hidden;
+  transform: translateY(4px);
+  .video-react{
+    padding: 0px !important;
+    width: 100%;
   }
 }
