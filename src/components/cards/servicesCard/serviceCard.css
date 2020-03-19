@@ -1,0 +1,35 @@
+.service__card {
+  width: 269.07px;
+  height: 327.42px;
+  margin-bottom: 21px;
+  margin-right: 2px;
+}
+
+.service_card-img {
+  width: 100%;
+  height: 181px;
+  margin-bottom: 22.4px;
+}
+
+.service_card-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.service_card-header {
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  font-weight: 600;
+  color: #1A1A1B;
+  margin-bottom: 8.8px;
+}
+
+.service_card-description {
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  font-weight: 500;
+  color: #8D8D8D;
+}
+/*# sourceMappingURL=serviceCard.css.map */

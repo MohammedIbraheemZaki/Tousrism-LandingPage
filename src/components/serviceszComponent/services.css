@@ -1,0 +1,66 @@
+.services__wrapper {
+  padding: 79px 0px 49px 0px;
+}
+
+.services__slider {
+  width: 100%;
+}
+
+.services__container .slick-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  outline: none;
+}
+
+.services__details {
+  max-width: 240.99px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.service_details-subtitle {
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #8D8D8D;
+  margin-bottom: 6.7px;
+}
+
+.service_details-title {
+  font-size: 2.6rem;
+  line-height: 2.8rem;
+  font-weight: 600;
+  color: #1A1A1B;
+  text-transform: capitalize;
+  margin-bottom: 7.7px;
+}
+
+.zeg {
+  width: 46.3px;
+  height: 3.75px;
+  margin-bottom: 28.6px;
+}
+
+.zeg img {
+  width: 100%;
+  height: 100%;
+}
+
+.service_details-description {
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  font-weight: 500;
+  color: #8D8D8D;
+}
+/*# sourceMappingURL=services.css.map */

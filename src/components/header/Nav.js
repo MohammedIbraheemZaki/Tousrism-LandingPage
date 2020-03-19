@@ -1,6 +1,6 @@
 import React from 'react';
-// import logo from './logo.svg';
-import './App.css';
+import logo from '../../Images/Tourism-logo.png';
+import './header.css';
 import {Link} from  'react-router-dom';
 
 function Nav() {
@@ -11,7 +11,7 @@ function Nav() {
           <nav className='nav__container' >
             <div className='logo' >
               <Link to='/'>
-                <p>Logo</p>
+                <img src={logo} alt="logo"/>
               </Link>
             </div>
             <ul className='nav__List' >
@@ -25,6 +25,9 @@ function Nav() {
                 OUR SERVICES
               </Link>
             </ul>
+            {/* <div className="toggle_nav">
+              <div className="toggle_animate--icon"></div>
+            </div> */}
           </nav>
         </div>
       </div>

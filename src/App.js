@@ -1,9 +1,14 @@
 import React from 'react';
-// import logo from './logo.svg';
+import MainSlider from "./components/main_slider/mainSlider";
 import './App.css';
-import Nav from './Nav';
+import Nav from './components/header/Nav';
+import MainSliderBg from './Images/mainSliderBg.jpg';
+import Wzeg from './Images/wzeg.png';
+import TourBg from './Images/tourBg.jpg';
+import videoImg from './Images/videoBlaceholder.jpg';
 import About from './About';
 import Service from './Service';
+import Services from './components/serviceszComponent/services'
 import {BrowserRouter as Router,
   // Switch,
   Route
@@ -12,13 +17,10 @@ function App() {
   return (
     <Router>
       <div className="App">
-        {/* <h1>App home Page</h1> */}
         <Nav/>
         <Route path="/" exact component={Home} />
         <Route path="/about" component={About} />
         <Route path="/service" component={Service} />
-        {/* <About/> */}
-        {/* <Shop/> */}
         
       </div>
     </Router>
@@ -26,23 +28,45 @@ function App() {
 }
 
 const Home = () => (
-  <div>
-    {/* <h1>home page</h1> */}
-    <div className="container">
-      <div className="row justify-content-between">
-        <div className="col-lg-12">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, aliquid et. Ex accusamus harum, cum voluptatum beatae blanditiis exercitationem cupiditate eligendi amet, sint vitae quos ipsam deserunt ratione veniam? Unde!
-          </p>
-        </div>
-        <div className="col-lg-4">
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate commodi perferendis itaque. Quia culpa ipsa atque eum in animi. Porro officia asperiores sunt delectus quasi vel consectetur ea doloremque iste.
-          </p>
+  
+  <>
+    <div className='main__slider'>
+      <img src={MainSliderBg} alt=""/>
+      <div className="container">
+        <div className="row justify-content-between">
+          <div className="col-lg-12">
+            <MainSlider/>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+    <div className="services__container">
+      <Services/>
+    </div>
+    <div className="video__container">
+      <img className='tour__bg' src={TourBg} alt=""/>
+      <div className="video_container-overlay">
+        <div className="container">
+          <div className="row justify-content-center  ">
+            <div className="col-lg-12">
+              <div className="section_header">
+                <h4 className="section_header-subtitle">DISCOVER</h4>
+                <h3 className="section_header-title">Watch Our Video Tour</h3>
+                <div className="zeg">
+                  <img src={Wzeg} alt=""/>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-7 ">
+              <div className="video">
+                <img src={videoImg} alt=""/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </>
 )
 
 export default App;
