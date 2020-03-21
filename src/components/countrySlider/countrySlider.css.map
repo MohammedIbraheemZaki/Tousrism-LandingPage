@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAGI,mBAHe,CACjB,gBAAgB,CAEd,YAAY,CAAA;EACV,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,OAAO,EAAE,IAAI;CACd",
+    "sources": [
+        "countrySlider.scss"
+    ],
+    "names": [],
+    "file": "countrySlider.css"
+}

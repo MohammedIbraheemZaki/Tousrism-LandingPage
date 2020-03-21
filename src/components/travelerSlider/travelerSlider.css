@@ -1,0 +1,13 @@
+.traveler__container .traveler__slider {
+  margin-bottom: 312.2px;
+}
+
+.traveler__container .traveler__slider .slick-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=travelerSlider.css.map */

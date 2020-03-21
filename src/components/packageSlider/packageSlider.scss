@@ -1,0 +1,15 @@
+.package{
+  .package__slider{
+    .slick-slide{
+      display: flex;
+      justify-content: center;
+      margin: 10px 0px;
+    }
+    .slick-next{
+      right: -75px;
+    }
+    .slick-prev{
+      left: -75px;
+    }
+  }
+}

@@ -1,7 +1,8 @@
 import React from 'react';
 import Slider from "react-slick";
-import ServiceCard from '../cards/servicesCard/serviceCard';
-function Services(){
+import TravelerCard from '../cards/travelerCard/travelerCrad';
+
+function PackageSlider(){
   const settings = {
     className: "center",
     infinite: true,
@@ -10,30 +11,29 @@ function Services(){
     arrows: false,
     dots: false,
     autoplay: true,
+    
   };
   return(
-  
-    <Slider {...settings} className='services__slider' >
+
+    <Slider {...settings} className='traveler__slider' >
       <div>
-        <ServiceCard/>
+        <TravelerCard/>
       </div>
       <div>
-        <ServiceCard/>
+        <TravelerCard/>
       </div>
       <div>
-        <ServiceCard/>
+        <TravelerCard/>
       </div>
       <div>
-        <ServiceCard/>
+        <TravelerCard/>
       </div>
       <div>
-        <ServiceCard/>
+        <TravelerCard/>
       </div>
-      
-      
     </Slider>
 
   )
 }
 
-export default Services;
+export default PackageSlider;

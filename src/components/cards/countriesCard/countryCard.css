@@ -1,0 +1,110 @@
+.country__card {
+  width: 271px;
+  height: 425px;
+  position: relative;
+  overflow: hidden;
+}
+
+.country__card img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+}
+
+.country__card .country_card-overlay {
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(15%, black), color-stop(40%, rgba(48, 48, 48, 0.3)));
+  background: linear-gradient(0deg, black 15%, rgba(48, 48, 48, 0.3) 40%);
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 17px;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+.country__card .country_card-content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.country__card:hover .country_card-overlay {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+
+.country_goto {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.country_goto img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 105%;
+  height: 105%;
+}
+
+.country_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  z-index: 1;
+}
+
+.country_info p {
+  color: #FEFEFF;
+  margin: 0;
+}
+
+.country_name {
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 3.7rem;
+  margin-bottom: 7px;
+}
+
+.country_price {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.6rem;
+}
+/*# sourceMappingURL=countryCard.css.map */

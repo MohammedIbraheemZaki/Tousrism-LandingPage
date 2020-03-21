@@ -1,0 +1,18 @@
+.package .package__slider .slick-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 10px 0px;
+}
+
+.package .package__slider .slick-next {
+  right: -75px;
+}
+
+.package .package__slider .slick-prev {
+  left: -75px;
+}
+/*# sourceMappingURL=packageSlider.css.map */

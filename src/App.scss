@@ -2,12 +2,19 @@
 @import './components/main_slider/mainSlider.scss';
 @import './components/serviceszComponent/services.scss';
 @import './components/cards/servicesCard/serviceCard.scss';
-// @import '~video-react/styles/scss/video-react';
-*{
-  margin: 0px;
-  padding: 0px;
+@import './components/cards/acchivedCard/acchivedCard.scss';
+@import './components/cards/tourPackageCard/tourPackageCard.scss';
+@import './components/packageSlider/packageSlider.scss';
+@import './components/cards/travelerCard/travelerCrad.scss';
+@import './components/travelerSlider/travelerSlider.scss';
+@import './components/cards/countriesCard/countryCard.scss';
+@import './components/countrySlider/countrySlider.scss';
+div,p,h1,h2,h3,h4,h5,h6{
+  margin: 0;
+  padding: 0;
   font-family: 'Raleway', sans-serif;
 }
+
 html{
   font-size: 62.5%;
   font-size: 10px;
@@ -50,6 +57,7 @@ html{
 .video__container{
   position: relative;
   height: auto;
+  margin-bottom: 107px;
   .tour__bg{
     position: absolute;
     top: 0px;
@@ -73,19 +81,19 @@ html{
   justify-content: center;
   align-items: center;
   margin-bottom: 52.7px;
-}
-.section_header-subtitle{
-  font-size: 1.6rem;
-  line-height: 2.8rem;
-  font-weight: 600;
-  color: #FFFFFF;
-  margin-bottom: 6.7px;
-}
-.section_header-title{
-  font-size: 2.6rem;
-  line-height: 2.8rem;
-  color: #fff;
-  margin-bottom: 7.8px;
+  .section_header-subtitle{
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin-bottom: 6.7px;
+  }
+  .section_header-title{
+    font-size: 2.6rem;
+    line-height: 2.8rem;
+    color: #fff;
+    margin-bottom: 7.8px;
+  }
 }
 .video{
   display: flex;
@@ -99,4 +107,178 @@ html{
     padding: 0px !important;
     width: 100%;
   }
+}
+
+// acchived section
+
+.acchived{
+  padding-bottom: 66px;
+  border-bottom: 1px solid #EBEBEB;
+}
+.section_header-subtitle{
+  text-align: center;
+  color: #8D8D8D;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  margin-bottom: 6.5px;
+}
+.section_header-title{
+  font-size: 2.59rem;
+  font-weight: 600;
+  color: #1A1A1B;
+  text-align: center;
+  margin-bottom: 0;
+}
+.section__header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 67px;
+}
+.package{
+  padding: 66px 0px 71px 0px;
+  .zeg{
+    padding:0;
+    width: 46.24px;
+    height: 3.76px;
+    margin: 0;
+    object-fit: fill;
+  }
+}
+
+// form container
+.form__container{
+  position: relative;
+  width: 100%;
+  height: 350px;
+  img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+}
+.form__overlay{
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(42, 245, 152, 0.6) 5%, rgba(8, 174, 234, 0.7) 80%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  form{
+    display: flex;
+    max-width: 572px;
+    width: 100%;
+    justify-content: space-between;
+    input[type="text"]{
+      width: 395px;
+      height: auto;
+      background-color: transparent;
+      border: 2px solid #fff;
+      border-radius: 25px;
+      padding: 14px 30px;
+      font-size: 1.6rem;
+      line-height: 1.6rem;
+      font-weight: 500;
+      color: #fff;
+      outline: none;
+      &::placeholder{
+        font-size: 1.6rem;
+        line-height: 1.6rem;
+        font-weight: 500;
+        color: #fff;
+      }
+    }
+    input[type="submit"]{
+      padding: 16px 33px;
+      border: 2px solid #fff;
+      border-radius: 25px;
+      background-color: #fff;
+      text-transform: uppercase;
+      font-size: 1.6rem;
+      line-height: 1.6rem;
+      font-weight: 600;
+      color: #08AEEA;
+      cursor: pointer;
+    }
+  }
+}
+.form_overlay-title{
+  font-size: 3.4rem;
+  line-height: 3.4rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.form_overlay-suntitle{
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  margin-bottom: 61.5px;
+  font-weight: 500;
+  color: #fff;
+}
+
+// traveler
+
+.traveler__container{
+  padding: 67px 0px 51px 0px;
+  position: relative;
+  height: auto;
+  .section__header{
+    margin-bottom: 82px;
+  }
+  .traveler__bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
+}
+.plan__trip{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h3{
+    font-size: 3.6rem;
+    line-height: 3.8rem;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 50px;
+  }
+  button{
+    padding: 15px 38px;
+    border-radius: 25px;
+    background: linear-gradient(145deg, rgba(42, 245, 152, 0.6) 5%, rgba(8, 174, 234, 0.7) 80%);
+    border: none;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+  }
+}
+
+// popular countries
+.popular__countries{
+  padding: 67px 0px 79px 0px;
+  .section__header{
+    margin-bottom: 70px;
+  }
+  .zeg{
+    margin-bottom: 0px;
+  }
+}
+
+// map
+
+.map__container{
+  width: 100%;
+  height: 435px;
 }

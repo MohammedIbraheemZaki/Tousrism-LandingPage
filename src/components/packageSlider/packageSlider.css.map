@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAEI,QAFI,CACN,gBAAgB,CACd,YAAY,CAAA;EACV,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,MAAM,EAAE,QAAQ;CACjB;;AANL,AAOI,QAPI,CACN,gBAAgB,CAMd,WAAW,CAAA;EACT,KAAK,EAAE,KAAK;CACb;;AATL,AAUI,QAVI,CACN,gBAAgB,CASd,WAAW,CAAA;EACT,IAAI,EAAE,KAAK;CACZ",
+    "sources": [
+        "packageSlider.scss"
+    ],
+    "names": [],
+    "file": "packageSlider.css"
+}

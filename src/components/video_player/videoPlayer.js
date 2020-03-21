@@ -16,9 +16,6 @@ function Video(){
     <Player
       poster={poster}
       autoPlay={false}
-      // style={{
-      //   // width: 663,
-      // }}
       >
        <source src="http://peach.themazzone.com/durian/movies/sintel-1024-surround.mp4" />
       <ControlBar>
